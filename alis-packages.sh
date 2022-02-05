@@ -91,9 +91,9 @@ function checks() {
     
     check_variables_value "USER_NAME" "$USER_NAME"
 
-    if [ -n "$PACKAGES_PACMAN" ]; then
+#    if [ -n "$PACKAGES_PACMAN" ]; then
 #        execute_sudo "pacman -Syi $PACKAGES_PACMAN"
-    fi
+#    fi
 
     if [ "$SYSTEM_INSTALLATION" == "false" ]; then
         ask_sudo
