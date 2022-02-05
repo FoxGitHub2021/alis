@@ -88,11 +88,13 @@ function facts() {
 
 function checks() {
     print_step "checks()"
-
+    
+    $USER_NAME=mfox
+    
     check_variables_value "USER_NAME" "$USER_NAME"
 
     if [ -n "$PACKAGES_PACMAN" ]; then
-        execute_sudo "pacman -S $PACKAGES_PACMAN"
+        execute_sudo "pacman -Syi $PACKAGES_PACMAN"
     fi
 
     if [ "$SYSTEM_INSTALLATION" == "false" ]; then
