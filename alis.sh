@@ -1011,6 +1011,7 @@ function kernels() {
 
     pacman_install "linux-headers"
     if [ -n "$KERNELS" ]; then
+        pacman_install "nvidia-lts"
         pacman_install "$KERNELS"
     fi
 }
