@@ -89,7 +89,7 @@ function facts() {
 function checks() {
     print_step "checks()"
     
-    $USER_NAME=mfox
+    $USER_NAME="mfox"
     
     check_variables_value "USER_NAME" "$USER_NAME"
 
