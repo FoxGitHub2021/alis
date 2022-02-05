@@ -89,8 +89,6 @@ function facts() {
 function checks() {
     print_step "checks()"
     
-    $USER_NAME="mfox"
-    
     check_variables_value "USER_NAME" "$USER_NAME"
 
     if [ -n "$PACKAGES_PACMAN" ]; then
