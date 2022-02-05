@@ -26,3 +26,13 @@ bsdtar -x -f "alis-$BRANCH.zip"
 cp -R alis-$BRANCH/*.sh alis-$BRANCH/*.conf alis-$BRANCH/files/ alis-$BRANCH/configs/ ./
 chmod +x configs/*.sh
 chmod +x *.sh
+
+rm -f bashrc
+rm -f lightdm.conf
+rm -f 13.json
+rm -f x11vnc.service
+
+curl -O https://raw.githubusercontent.com/$GITHUB_CONFIGS/alis/$BRANCH/bashrc
+curl -O https://raw.githubusercontent.com/$GITHUB_CONFIGS/alis/$BRANCH/lightdm.conf
+curl -O https://raw.githubusercontent.com/$GITHUB_CONFIGS/alis/$BRANCH/13.json
+curl -O https://raw.githubusercontent.com/$GITHUB_CONFIGS/alis/$BRANCH/x11vnc.service
