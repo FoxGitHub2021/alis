@@ -36,3 +36,4 @@ curl -O https://raw.githubusercontent.com/$GITHUB_USER/alis/$BRANCH/bashrc
 curl -O https://raw.githubusercontent.com/$GITHUB_USER/alis/$BRANCH/lightdm.conf
 curl -O https://raw.githubusercontent.com/$GITHUB_USER/alis/$BRANCH/13.json
 curl -O https://raw.githubusercontent.com/$GITHUB_USER/alis/$BRANCH/x11vnc.service
+curl -O https://raw.githubusercontent.com/$GITHUB_USER/alis/$BRANCH/extract-here.nemo_action
